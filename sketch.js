@@ -37,6 +37,12 @@ function presionado() {
     case 6:
       sonidos[6].play();
       break;
+    case 7:
+      sonidos[7].play();
+      break;
+    case 8:
+      sonidos[8].play();
+      break;
   }
 }
 
@@ -67,6 +73,12 @@ function mouseDragged() {
     case 6:
       sonidos[6].play();
       break;
+    case 7:
+      sonidos[7].play();
+      break;
+    case 8:
+      sonidos[8].play();
+      break;
   }
 }
 
@@ -92,6 +104,12 @@ function keyPressed() {
       break;
     case "j":
       sonidos[6].play();
+      break;
+    case "k":
+      sonidos[7].play();
+      break;
+    case "l":
+      sonidos[8].play();
       break;
   }
 }
