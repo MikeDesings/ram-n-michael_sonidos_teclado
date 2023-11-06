@@ -1,24 +1,21 @@
 let sonidos = [];
 
 function preload() {
-  for (let i = 0; i < 7; i++) {
+  for (let i = 1; i < 9; i++) {
     sonidos[i] = loadSound("sonidos/" + i + ".mp3");
   }
 }
 
 function setup() {
   let cnv = createCanvas(windowWidth, windowHeight);
-  cnv.mouseClicked(presionado);
+  cnv.mousePressed(presionado);
 }
 
 function presionado() {
-  let r = Math.floor(random(7));
+  let r = Math.floor(random(1, 8));
   circle(mouseX, mouseY, 20);
 
   switch (r) {
-    case 0:
-      sonidos[0].play();
-      break;
     case 1:
       sonidos[1].play();
       break;
@@ -47,14 +44,12 @@ function presionado() {
 }
 
 function draw() {}
+
 function mouseDragged() {
-  let r = Math.floor(random(7));
+  let r = Math.floor(random(1, 8));
   circle(mouseX, mouseY, 20);
 
   switch (r) {
-    case 0:
-      sonidos[0].play();
-      break;
     case 1:
       sonidos[1].play();
       break;
@@ -85,30 +80,27 @@ function mouseDragged() {
 function keyPressed() {
   switch (key) {
     case "a":
-      sonidos[0].play();
-      break;
-    case "s":
       sonidos[1].play();
       break;
-    case "d":
+    case "s":
       sonidos[2].play();
       break;
-    case "f":
+    case "d":
       sonidos[3].play();
       break;
-    case "g":
+    case "f":
       sonidos[4].play();
       break;
-    case "h":
+    case "g":
       sonidos[5].play();
       break;
-    case "j":
+    case "h":
       sonidos[6].play();
       break;
-    case "k":
+    case "j":
       sonidos[7].play();
       break;
-    case "l":
+    case "k":
       sonidos[8].play();
       break;
   }
